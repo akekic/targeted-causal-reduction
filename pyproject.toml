@@ -1,0 +1,42 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=64.0.0",
+    "wheel>=0.40.0",
+]
+
+[project]
+name = "targeted-causal-reduction"
+version = "0.0.1"
+description = "Targeted causal reduction learns high-level causes for phenomena occuring in simulations."
+authors = [
+    { name="Armin Kekic", email="armin.kekic@mailbox.org" }
+]
+license = { text = "MIT" }
+dynamic = ["readme"]
+requires-python = ">=3.11"
+dependencies = [
+    "h5py",
+    "lightning",
+    "matplotlib",
+    "numpy",
+    "scikit-learn",
+    "scipy",
+    "typed-argument-parser",
+    "wandb",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+tcr = "targeted_causal_reduction.__main__:main"
+
+[tool.setuptools]
+packages = ["targeted_causal_reduction"]
+
+[tool.setuptools.dynamic]
+version = {attr = "my_package.VERSION"}
+readme = {file = ["README.md"]}
