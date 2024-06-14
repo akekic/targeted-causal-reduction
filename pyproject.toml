@@ -7,7 +7,7 @@ requires = [
 
 [project]
 name = "targeted-causal-reduction"
-version = "0.0.1"
+version = "0.0.1a1"
 description = "Targeted causal reduction learns high-level causes for phenomena occuring in simulations."
 authors = [
     { name="Armin Kekic", email="armin.kekic@mailbox.org" }
@@ -34,9 +34,9 @@ dev = [
 [project.scripts]
 tcr = "targeted_causal_reduction.__main__:main"
 
-[tool.setuptools]
-packages = ["targeted_causal_reduction"]
+[project.urls]
+source = "https://github.com/akekic/targeted-causal-reduction"
 
 [tool.setuptools.dynamic]
 version = {attr = "my_package.VERSION"}
-readme = {file = ["README.md"]}
+readme = {file = "README.md", content-type = "text/markdown"}

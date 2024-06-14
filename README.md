@@ -5,7 +5,7 @@
 [![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2311.18639-00ff00.svg)](https://arxiv.org/abs/2311.18639)
 
-![TCR](tcr_overview.png)
+![TCR](targeted_causal_reduction/images/tcr_overview.png)
 ## Overview
 TCR is a method for explaining a phenomenon (called **target**) in high-dimensional simulations (**low-level model**)
 by learning a low-dimensional causal model (**high-level model**) that captures the most important causes of the target.
