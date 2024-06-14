@@ -1,11 +1,12 @@
 # Targeted Causal Reduction (TCR)
+[![arXiv](https://img.shields.io/badge/arXiv-2311.18639-00ff00.svg)](https://arxiv.org/abs/2311.18639)
+[![PyPI version](https://badge.fury.io/py/targeted-causal-reduction.svg)](https://pypi.org/project/targeted-causal-reduction/)
+[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Lightning](https://img.shields.io/badge/-Lightning-792ee5?logo=lightning&logoColor=white)](https://lightning.ai/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2311.18639-00ff00.svg)](https://arxiv.org/abs/2311.18639)
 
-![TCR](targeted_causal_reduction/images/tcr_overview.png)
+![TCR](https://raw.githubusercontent.com/akekic/targeted-causal-reduction/main/targeted_causal_reduction/images/tcr_overview.png)
 ## Overview
 TCR is a method for explaining a phenomenon (called **target**) in high-dimensional simulations (**low-level model**)
 by learning a low-dimensional causal model (**high-level model**) that captures the most important causes of the target.
@@ -13,6 +14,13 @@ It uses shift interventions in the low-level model and its effects on the target
 The full mathematical details are explained in the [associated paper](https://arxiv.org/abs/2311.18639).
 
 ## Installation
+
+### Option 1: Install from PyPI
+```bash
+pip install targeted-causal-reduction
+```
+
+### Option 2: Install from source
 Clone the repository
 ```bash
 git clone git@github.com:akekic/targeted-causal-reduction.git
